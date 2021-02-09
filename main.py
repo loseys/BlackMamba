@@ -44,6 +44,7 @@ class MainWindow(QMainWindow):
 
     
         path = str(os.path.abspath(__file__))
+        path = path.replace('\main.py', '').replace('/main.py', '')
 
         try:
             os.remove(f'{path}/bin/hosts/.gitkeep')
