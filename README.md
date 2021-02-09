@@ -86,8 +86,11 @@ key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
     WINDOWS
     python main.py
     
-    LINUX
+    GNU/LINUX
     sudo python3.8 main.py
+   
+        KALI LINUX
+        (sudo python3 main.py)
 
 8º - Click on the button that have a person icon and plus signal;
 
@@ -102,7 +105,7 @@ After create the Client script you'll need to open the script in the host target
 
 python script.py
 
-**LINUX**
+**GNU/LINUX**
 
 1º Download the packages:
 
@@ -112,6 +115,9 @@ python script.py
     python3-dev -y
 
 2º sudo python3.8 script.py
+
+    KALI LINUX
+    (sudo python3 script.py)
   
 **IMPORTANT**: The script of client not have persistence, if you want to do a persistence you'll need 
 to made by yourself. Another important point is that the client script maybe delay some seconds or few 
