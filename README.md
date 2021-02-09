@@ -113,8 +113,9 @@ python script.py
 
 2º sudo python3.8 script.py
   
-**IMPORTANT**: The Python file not have persistence, if you want to do a persistence you'll need 
-to made by yourself.
+**IMPORTANT**: The script of client not have persistence, if you want to do a persistence you'll need 
+to made by yourself. Another important point is that the client script maybe delay some seconds or few 
+minutes for connect/reconnect.
 
 # Release status
 
