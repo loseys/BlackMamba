@@ -55,7 +55,14 @@ Some of BlackMamba features are:
     
 2º - Install the PIP packages;
 
-     pip install -r packages.txt 
+     PyQt5
+     Pillow
+     PyAutoGUI
+     WMI
+     pytest-shutil
+     opencv-python
+     pynput
+     pygame
 
 3º - Open the port 65000 and 65005 in your Gateway or Router (the port number is optional); 
 
