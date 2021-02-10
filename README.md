@@ -128,6 +128,10 @@ minutes for connect/reconnect.
 
 Currently the BlackMamba is on beta stage, this means that the features are all completed but likely to contain a number of known and unknown bugs. Is important reinforce that the majority of critical bugs like crashes or buffer overflow alredy have been solved.
 
+# More information
+
+For more information please take a look in the Wiki.
+
 # Call for Contributions
 
 I'm just one person developing the BlackMamba, if anyone finds this tool useful and would like to add some functionality, improve the code performace or improve something in the BlackMamba the best way to get it added is to submit a pull request.
