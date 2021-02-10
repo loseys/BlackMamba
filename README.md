@@ -130,7 +130,7 @@ Currently the BlackMamba is on beta stage, this means that the features are all 
 
 # Call for Contributions
 
-I'm just one person developing the BlackMamba, if anyone finds this tool useful and would like to add some functionality, improve the code performace or improve something in the BlackMamba the best way to get it added is to submit a pull request. For technical details or more information about the BlackMamba please take a look in the Wiki!
+I'm just one person developing the BlackMamba, if anyone finds this tool useful and would like to add some functionality, improve the code performace or improve something in the BlackMamba the best way to get it added is to submit a pull request.
 
 If you want to collaborate but you don't know Python you can help me so much with bug reports, you can do it with Issues :)
 
