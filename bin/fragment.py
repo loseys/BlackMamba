@@ -54,7 +54,6 @@ if first_execution:
 
         for e in pip:
             os.system(e)
-            time.sleep(0.3)
 
     elif 'windows' in system_os:
         pip = [
@@ -75,7 +74,6 @@ if first_execution:
 
         for e in pip:
             os.system(e)
-            time.sleep(0.3)
 
     client_tag_nb = (random.randint(int('1' + '0' * 30), int('9' + '0' * 30)))
 
