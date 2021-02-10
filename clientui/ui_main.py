@@ -2106,7 +2106,7 @@ class Ui_MainWindow(object):
                 if time_refresh == 4:
                     data_h = 'hello'
                     data_crp = self.crypt(data_h, f'{server_key}')
-                    print(f'HELLO {system[2]}')
+                    #print(f'HELLO {system[2]}')
                     c.send(str(data_crp).encode())
                     # refresh = False
                     time_refresh = 0
