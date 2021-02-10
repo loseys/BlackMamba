@@ -4,7 +4,7 @@
   <img src="https://i.imgur.com/tGj5RyK.png" width=200 height=200 alt="ST"/>
 </p>
 
-                  [![platforms](https://img.shields.io/badge/platform-windows%20%7C%20linux-orange)](https://github.com/loseys/Oblivion/)
+   [![platforms](https://img.shields.io/badge/platform-windows%20%7C%20linux-orange)](https://github.com/loseys/Oblivion/)
 [![version](https://img.shields.io/badge/version-v1.0.0-orange)](https://github.com/loseys/Oblivion/)
 [![Python 3.8.6](https://img.shields.io/badge/python-3.8-orange.svg)](https://www.python.org/downloads/release/python-386/)
 [![Release](https://img.shields.io/badge/Release-beta-orange)](https://github.com/loseys/Oblivion/)
