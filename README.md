@@ -88,9 +88,11 @@ key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
     python main.py
     
     GNU/LINUX
+    sudo chmod 777 main.py
     sudo python3.8 main.py
    
         KALI LINUX
+        (sudo chmod 777 main.py)
         (sudo python3 main.py)
 
 8º - Click on the button that have a person icon and plus signal;
