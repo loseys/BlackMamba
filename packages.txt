@@ -1,7 +1,6 @@
 PyQt5==5.15.2
 Pillow==8.1.0
 PyAutoGUI==0.9.52
-WMI==1.5.1
 pytest-shutil==1.7.0
 pynput==1.7.2
 pygame==2.0.1
