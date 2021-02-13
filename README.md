@@ -58,7 +58,6 @@ Some of BlackMamba features are:
      PyQt5
      Pillow
      PyAutoGUI
-     WMI
      pytest-shutil
      cryptography
      pynput
