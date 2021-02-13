@@ -60,7 +60,6 @@ Some of BlackMamba features are:
      PyAutoGUI
      WMI
      pytest-shutil
-     opencv-python
      cryptography
      pynput
      pygame
