@@ -1,8 +1,6 @@
-# BLACKMAMBA
+<p><img src="https://i.imgur.com/tGj5RyK.png" width="350px" /></p>
 
-<p align="center">
-  <img src="https://i.imgur.com/tGj5RyK.png" width=200 height=200 alt="ST"/>
-</p>
+# BLACKMAMBA
 
 [![platforms](https://img.shields.io/badge/platform-windows%20%7C%20linux-orange)](https://github.com/loseys/Oblivion/)
 [![version](https://img.shields.io/badge/version-v1.0.14-orange)](https://github.com/loseys/Oblivion/)
