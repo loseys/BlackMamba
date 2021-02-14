@@ -1,4 +1,6 @@
-<p><img src="https://i.imgur.com/tGj5RyK.png" width="350px" align="center"/></p>
+<p align="center">
+  <img src="https://i.imgur.com/tGj5RyK.png" width=200 height=200 alt="ST"/>
+</p>
 
 # BLACKMAMBA
 
