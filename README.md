@@ -1,4 +1,4 @@
-<p><img src="https://i.imgur.com/tGj5RyK.png" width="350px" /></p>
+<p><img src="https://i.imgur.com/tGj5RyK.png" width="350px" align="center"/></p>
 
 # BLACKMAMBA
 
