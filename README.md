@@ -54,7 +54,9 @@ Some of BlackMamba features are:
 1º - Download the BlackMamba;
     
 2º - Install the PIP packages;
-
+   
+   pip install -r requirements.txt
+     
      PyQt5
      Pillow
      PyAutoGUI
