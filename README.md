@@ -55,7 +55,7 @@ Some of BlackMamba features are:
     
 2º - Install the PIP packages;
    
-   pip install -r requirements.txt
+     pip install -r requirements.txt
      
      PyQt5
      Pillow
