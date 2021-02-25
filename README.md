@@ -10,17 +10,17 @@
 [![Release](https://img.shields.io/badge/Release-beta-orange)](https://github.com/loseys/Oblivion/)
 [![license](https://img.shields.io/badge/license-MIT-orange)](https://github.com/loseys/Oblivion/)
 
-BlackMamba is a multi client C2/post exploitation framework with some spyware features. Powered by Python 3.8.6 and QT Framework.
+BlackMamba is a multi-client C2/post-exploitation framework with some spyware features. It is powered by Python 3.8.6 and QT Framework.
 
 Some of BlackMamba features are:
-- **Multi Client** - Supports multiple client connections at the same time.
-- **Real Time Communication Updates** - Real time communication and updates between the client and server.
-- **Encrypted Communication** - Almost all communications are encrypt, with exception of screen video streaming.
-- **Screenshot Gattering** - Get a realtime screenshot from the client.
-- **Video Streaming** - Watch in real time the client screen.
+- **Multi-Client** - Supports multiple client connections at the same time.
+- **Real-Time Communication Updates** - Real-time communication and updates between the client and server.
+- **Encrypted Communication** - Almost all communications are encrypted, except for screen video streaming.
+- **Screenshot Gathering** - Get a real-time screenshot from the client.
+- **Video Streaming** - Watch in real-time the client screen.
 - **Client Lock** - Lock and unlock the machine of the client.
 - **Encrypted File Transfer (upload/download)** - Download files from the client or uploads files for the client.
-- **Keylogger** - Register all the keys pressed by client.
+- **Keylogger** - Register all the keys pressed by the client.
 - **Web Downloader** - Download files from URLs or content by RAW pages.
 
 <p align="center">
@@ -67,7 +67,7 @@ Some of BlackMamba features are:
 
 3º - Open the port 65000 and 65005 in your Gateway or Router (the port number is optional); 
 
-4º - Create an exception in firewall for BlackMamba or disable it;
+4º - Create an exception in the firewall for BlackMamba or disable it;
 
 5ª - Go to "BlackMamba/bin/profile/socket.txt" and input the port number opened;
 
@@ -77,10 +77,10 @@ Some of BlackMamba features are:
 
      IMPORTANT: Do not change the 0.0.0.0.
      
-6º (OPTIONAL) - Go to BlackMamba folder and open the "keygen.py" file. Copy the result
+6º (OPTIONAL) - Go to the BlackMamba folder and open the "keygen.py" file. Copy the resulting
 key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
 
-    The BlackMamba use a default cryptography key, is interesting that you change it.
+    The BlackMamba uses a default cryptography key. It is interesting that you change it.
     
 7º - Back to BlackMamba root folder and open the "main.py" file;
 
@@ -95,14 +95,14 @@ key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
         (sudo chmod 777 main.py)
         (sudo python3 main.py)
 
-8º - Click on the button that have a person icon and plus signal;
+8º - Click on the button that has a person icon and plus signal;
 
-9º - Input the path where the Python file will be created, input the both port numbers and 
+9º - Input the path where the Python file will be created, input both port numbers and 
 the IP address (external or local) of your host, then click on the "Create" button.
 
 > CLIENT INSTALL
 
-After create the Client script you'll need to open the script in the host target:
+After creating the Client script, you'll need to open the script in the host target:
 
 **WINDOWS**
 
@@ -122,23 +122,23 @@ python script.py
     KALI LINUX
     (sudo python3 script.py)
   
-**IMPORTANT**: The script of client not have persistence, if you want to do a persistence you'll need 
-to made by yourself. Another important point is that the client script maybe delay some seconds or few 
+**IMPORTANT**: The script of the client does not have persistence. If you want to do persistence, you'll need
+to make it by yourself. Another important point is that the client script maybe delay some seconds or few 
 minutes for connect/reconnect.
 
 # Release status
 
-Currently the BlackMamba is on beta stage, this means that the features are all completed but likely to contain a number of known and unknown bugs. Is important reinforce that the majority of critical bugs like crashes or buffer overflow alredy have been solved.
+Currently the BlackMamba is on beta stage, this means that the features are all completed but likely to contain a number of known and unknown bugs. It is important to reinforce that most critical bugs like crashes or buffer overflow have already been solved.
 
 # More information
 
-For more information please take a look in the Wiki.
+For more information, please take a look at the Wiki.
 
 # Call for Contributions
 
-I'm just one person developing the BlackMamba, if anyone finds this tool useful and would like to add some functionality, improve the code performace or improve something in the BlackMamba the best way to get it added is to submit a pull request.
+I'm just one person developing the BlackMamba. If anyone finds this tool useful and wants to add some functionality, improve the code performance or improve something in the BlackMamba, the best way to get it added is to submit a pull request.
 
-If you want to collaborate but you don't know Python you can help me so much with bug reports, you can do it with Issues :)
+If you want to collaborate but you don't know Python, you can help me so much with bug reports. You can do it by submitting Issues you encounter :)
 
 # Author
 
