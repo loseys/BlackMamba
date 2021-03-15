@@ -758,7 +758,6 @@ class Client:
                 try:
                     path = r'/Namespace:\\root\SecurityCenter2'
                     ant = 'AntiVirusProduct'
-                    value = r'\value'
                     clean = f'[@%HOST_SHELL%@]'
                     collected = subprocess.check_output(['wmic', r'{}'.format(path), 'path', ant, 'get', r'/value'])
                     analyzing = str(collected)
