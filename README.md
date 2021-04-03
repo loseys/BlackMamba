@@ -148,7 +148,10 @@ Gustavo ([Loseys](https://github.com/loseys))
 
 **(In no particular order)**
 
-- [Random Davis](https://stackoverflow.com/users/6273251/random-davis) for help me with video streaming script.
-- [Wanderson-Magalhaes](https://github.com/Wanderson-Magalhaes) for GUI inspiration. Tamo junto Wanderson.
-- [@byt3bl33d3r](https://github.com/byt3bl33d3r) for README inspiration.
-- **Vitor** for help me with some English translations.
+- [Random Davis](https://stackoverflow.com/users/6273251/random-davis)
+- [Wanderson-Magalhaes](https://github.com/Wanderson-Magalhaes)
+- [@byt3bl33d3r](https://github.com/byt3bl33d3r)
+- **Vitor**
+- [cybernobie](https://github.com/cybernobie)
+- [w0rk3r](https://github.com/w0rk3r)
+- [wesley587](https://github.com/wesley587)
