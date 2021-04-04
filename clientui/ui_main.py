@@ -1944,7 +1944,7 @@ class Ui_MainWindow(object):
 
                         data_string = ''
 
-                        c.settimeout(20)
+                        c.settimeout(200)
                         data = str(c.recv(1024))
                         #print(data)
 
