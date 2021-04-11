@@ -1758,5 +1758,5 @@ class Ui_MainWindow2(object):
         #self.toolButton_10.setText("")
         #self.toolButton_11.setText("")
         self.label_credits.setText(QCoreApplication.translate("MainWindow", u"BlackMamba by Loseys", None))
-        self.label_version.setText(QCoreApplication.translate("MainWindow", u"v1.0.24", None))
+        self.label_version.setText(QCoreApplication.translate("MainWindow", u"v1.0.32", None))
     # retranslateUi
