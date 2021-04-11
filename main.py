@@ -1,4 +1,4 @@
-####################################################################################
+#################################################################################### 
 # BLACKMAMBA BY: LOSEYS (https://github.com/loseys)
 #
 # QT GUI INTERFACE BY: WANDERSON M.PIMENTA (https://github.com/Wanderson-Magalhaes)
