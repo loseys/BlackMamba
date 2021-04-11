@@ -3,7 +3,7 @@
 #
 # QT GUI INTERFACE BY: WANDERSON M.PIMENTA (https://github.com/Wanderson-Magalhaes)
 # ORIGINAL QT GUI: https://github.com/Wanderson-Magalhaes/Simple_PySide_Base
-####################################################################################
+#################################################################################### 
 
 """
 Generates a Fernet key.
