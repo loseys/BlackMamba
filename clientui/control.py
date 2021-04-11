@@ -1069,7 +1069,7 @@ class Ui_MainWindow2(object):
                              "-info                                Shows informations about host.\n",
                              "-fontsize <int>                      Sets the font size.\n",
                              "-history                             Shows the history of commands.\n",
-                             "-update                              Get a list of installed update (only windows)\n",
+                             "-updates                             Get a list of installed update (only windows)\n",
                              "-antivirus                           Lists the installed Antivirus on host (only windows).\n"
                              "-softwares                           Lists the installed softwares on host.\n",
                              "-keylogger start                     Start the keylogger function.\n",
@@ -1353,7 +1353,7 @@ class Ui_MainWindow2(object):
             #self.plainTextEdit.insertPlainText(f"{''.join([chr(13)])}")
             self.lineEdit_2.clear()
 
-        elif self.lineEdit_2.text() == '-update':
+        elif self.lineEdit_2.text() == '-updates':
             self.call_sc(upd=True)
             gcts = self.host_terminal.text()
             if gcts == '' or gcts == ' ':
