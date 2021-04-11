@@ -82,7 +82,7 @@ key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
 
     The BlackMamba uses a default cryptography key. It is interesting that you change it.
     
-7º - Back to BlackMamba root folder and open the "main.py" file;
+7º - Back to BlackMamba root folder and open the "main.py" file; 
 
     WINDOWS
     python main.py
