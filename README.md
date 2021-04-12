@@ -36,7 +36,7 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
 - [x] Keylogger;
 - [x] Web downloader.
 
-### Call for Contributions
+### Call for Contributions⚠️
 
 Hey, before you go to gallery you need to know that the BlackMamba is a open project, so, if you finds this tool useful and wants to add some functionality, improve the code performance or improve something in the BlackMamba, the best way to get it added is to submit a pull request <3
 
