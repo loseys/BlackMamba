@@ -44,23 +44,13 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
 <img src="https://user-images.githubusercontent.com/61597947/107297938-245f7e80-6a53-11eb-9653-bea856c87951.png" />
 
 
-# Install Guide
-
-> SERVER INSTALL
+### Installation
 
 1º - Download the BlackMamba;
     
 2º - Install the PIP packages;
    
-     pip install -r requirements.txt
-     
-     PyQt5
-     Pillow
-     PyAutoGUI
-     pytest-shutil
-     cryptography
-     pynput
-     pygame
+     pip install -r requirements.txt  
 
 3º - Open the port 65000 and 65005 in your Gateway or Router (the port number is optional); 
 
@@ -72,7 +62,7 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
      PORT=65000
      PORT_VIDEO=65005
 
-     IMPORTANT: Do not change the 0.0.0.0.
+>IMPORTANT: Do not change the 0.0.0.0.
      
 6º (OPTIONAL) - Go to the BlackMamba folder and open the "keygen.py" file. Copy the resulting
 key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
@@ -84,20 +74,20 @@ key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
     WINDOWS
     python main.py
     
-    GNU/LINUX
+    KALI LINUX
+    (sudo chmod 777 main.py)
+    (sudo python3 main.py)
+    
+    ANOTHER LINUX
     sudo chmod 777 main.py
     sudo python3.8 main.py
-   
-        KALI LINUX
-        (sudo chmod 777 main.py)
-        (sudo python3 main.py)
 
 8º - Click on the button that has a person icon and plus signal;
 
 9º - Input the path where the Python file will be created, input both port numbers and 
 the IP address (external or local) of your host, then click on the "Create" button.
 
-> CLIENT INSTALL
+# Client Installation
 
 After creating the Client script, you'll need to open the script in the host target:
 
@@ -123,25 +113,25 @@ python script.py
 to make it by yourself. Another important point is that the client script maybe delay some seconds or few 
 minutes for connect/reconnect.
 
-# Release status
+### Release status
 
 Currently the BlackMamba is on beta stage, this means that the features are all completed but likely to contain a number of known and unknown bugs. It is important to reinforce that most critical bugs like crashes or buffer overflow have already been solved.
 
-# More information
+### More information
 
 For more information, please take a look at the Wiki.
 
-# Call for Contributions
+### Call for Contributions
 
 I'm just one person developing the BlackMamba. If anyone finds this tool useful and wants to add some functionality, improve the code performance or improve something in the BlackMamba, the best way to get it added is to submit a pull request.
 
 If you want to collaborate but you don't know Python, you can help me so much with bug reports. You can do it by submitting Issues you encounter :)
 
-# Author
+### Author
 
 Gustavo ([Loseys](https://github.com/loseys))
 
-# Acknowledgments, Contributors & Involuntary Contributors
+### Acknowledgments, Contributors & Involuntary Contributors
 
 **(In no particular order)**
 
