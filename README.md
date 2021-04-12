@@ -1,27 +1,40 @@
+<h1 align="center">
+  <br>
+  <a href="https://github.com/s0md3v/Arjun"><img src="https://i.imgur.com/tGj5RyK.png" width=160 height=150 alt="BlackMamba"></a>
+  <br>
+  BlackMamba
+  <br>
+</h1>
+
+<h4 align="center">Command and Control</h4>
+
 <p align="center">
-  <img src="https://i.imgur.com/tGj5RyK.png" width=250 height=250 alt="ST"/>
+  <a href="https://github.com/loseys/Oblivion/">
+    <img src="https://img.shields.io/badge/platform-windows%20%7C%20linux-orange">
+  </a>
+  <a href="https://github.com/loseys/Oblivion/">
+    <img src="https://img.shields.io/badge/version-v1.0.32-orange">
+  </a>
+  <a href="https://github.com/loseys/Oblivion/">
+      <img src="https://img.shields.io/badge/python-3.8.6-orange.svg">
+  </a>
 </p>
 
-# BLACKMAMBA
-
-[![platforms](https://img.shields.io/badge/platform-windows%20%7C%20linux-orange)](https://github.com/loseys/Oblivion/)
-[![version](https://img.shields.io/badge/version-v1.0.14-orange)](https://github.com/loseys/Oblivion/)
-[![Python 3.8.6](https://img.shields.io/badge/python-3.8-orange.svg)](https://www.python.org/downloads/release/python-386/)
-[![Release](https://img.shields.io/badge/Release-beta-orange)](https://github.com/loseys/Oblivion/)
-[![license](https://img.shields.io/badge/license-MIT-orange)](https://github.com/loseys/Oblivion/)
+### What's BlackMamba?
 
 BlackMamba is a multi-client C2/post-exploitation framework with some spyware features. It is powered by Python 3.8.6 and QT Framework.
 
-Some of BlackMamba features are:
-- **Multi-Client** - Supports multiple client connections at the same time.
-- **Real-Time Communication Updates** - Real-time communication and updates between the client and server.
-- **Encrypted Communication** - Almost all communications are encrypted, except for screen video streaming.
-- **Screenshot Gathering** - Get a real-time screenshot from the client.
-- **Video Streaming** - Watch in real-time the client screen.
-- **Client Lock** - Lock and unlock the machine of the client.
-- **Encrypted File Transfer (upload/download)** - Download files from the client or uploads files for the client.
-- **Keylogger** - Register all the keys pressed by the client.
-- **Web Downloader** - Download files from URLs or content by RAW pages.
+### Some Features:
+
+- [x] Supports multiple client connections at the same time.
+- [x] Real-time communication and updates between the client and server.
+- [x] Almost all communications are encrypted, except for screen video streaming.
+- [x] Get a real-time screenshot from the client.
+- [x] Watch in real-time the client screen.
+- [x] Lock and unlock the machine of the client.
+- [x] Download files from the client or uploads files for the client.
+- [x] Register all the keys pressed by the client.
+- [x] Download files from URLs or content by RAW pages.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=1127 height=618 alt="ST"/> 
