@@ -36,6 +36,10 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
 - [x] Keylogger;
 - [x] Web downloader.
 
+### Call for Contributions
+
+Hey, before you go to gallery you need to know that the BlackMamba is a open project, so, if you finds this tool useful and wants to add some functionality, improve the code performance or improve something in the BlackMamba, the best way to get it added is to submit a pull request <3
+
 ### Gallery
 
 <img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=100% />
@@ -114,20 +118,6 @@ python script.py
 *IMPORTANT: The script of the client does not have persistence. If you want to do persistence, you'll need
 to make it by yourself. Another important point is that the client script maybe delay some seconds or few 
 minutes for connect/reconnect.*
-
-### Release status
-
-Currently the BlackMamba is on beta stage, this means that the features are all completed but likely to contain a number of known and unknown bugs. It is important to reinforce that most critical bugs like crashes or buffer overflow have already been solved.
-
-### More information
-
-For more information, please take a look at the Wiki.
-
-### Call for Contributions
-
-I'm just one person developing the BlackMamba. If anyone finds this tool useful and wants to add some functionality, improve the code performance or improve something in the BlackMamba, the best way to get it added is to submit a pull request.
-
-If you want to collaborate but you don't know Python, you can help me so much with bug reports. You can do it by submitting Issues you encounter :)
 
 ### Author
 
