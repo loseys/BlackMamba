@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/s0md3v/Arjun"><img src="https://i.imgur.com/tGj5RyK.png" width=160 height=150 alt="BlackMamba"></a>
+  <a href="https://github.com/loseys/Oblivion/"><img src="https://i.imgur.com/tGj5RyK.png" width=160 height=150 alt="BlackMamba"></a>
   <br>
   BlackMamba
   <br>
