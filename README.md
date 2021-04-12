@@ -93,11 +93,11 @@ the IP address (external or local) of your host, then click on the "Create" butt
 
 After creating the Client script, you'll need to open the script in the host target:
 
-**WINDOWS**
+>WINDOWS
 
 python script.py
 
->GNU/LINUX**
+>GNU/LINUX
 
 1º Download the packages:
 
