@@ -38,10 +38,12 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
 
 ### Gallery
 
-<img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297929-21fd2480-6a53-11eb-96d4-a45551f07954.png" width=50% />
-<img src="https://user-images.githubusercontent.com/61597947/107297933-23c6e800-6a53-11eb-8b24-9d49876797e1.png" />
-<img src="https://user-images.githubusercontent.com/61597947/107297931-232e5180-6a53-11eb-8070-a0081b1f4fd3.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297937-245f7e80-6a53-11eb-8eb5-0c8876cb2b58.png" width=50% />
-<img src="https://user-images.githubusercontent.com/61597947/107297938-245f7e80-6a53-11eb-9653-bea856c87951.png" />
+<img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=100% />
+<img src="https://user-images.githubusercontent.com/61597947/107297929-21fd2480-6a53-11eb-96d4-a45551f07954.png" width=100% />
+<img src="https://user-images.githubusercontent.com/61597947/107297933-23c6e800-6a53-11eb-8b24-9d49876797e1.png" width=100% />
+<img src="https://user-images.githubusercontent.com/61597947/107297931-232e5180-6a53-11eb-8070-a0081b1f4fd3.png" width=100% />
+<img src="https://user-images.githubusercontent.com/61597947/107297937-245f7e80-6a53-11eb-8eb5-0c8876cb2b58.png" width=100% />
+<img src="https://user-images.githubusercontent.com/61597947/107297938-245f7e80-6a53-11eb-9653-bea856c87951.png" width=100% />
 
 
 ### Installation
@@ -87,7 +89,7 @@ key and paste in the "BlackMamba/bin/profile/crypt_key.py" ;
 9º - Input the path where the Python file will be created, input both port numbers and 
 the IP address (external or local) of your host, then click on the "Create" button.
 
-# Client Installation
+### Client Installation
 
 After creating the Client script, you'll need to open the script in the host target:
 
@@ -95,7 +97,7 @@ After creating the Client script, you'll need to open the script in the host tar
 
 python script.py
 
-**GNU/LINUX**
+>GNU/LINUX**
 
 1º Download the packages:
 
@@ -109,9 +111,9 @@ python script.py
     KALI LINUX
     (sudo python3 script.py)
   
-**IMPORTANT**: The script of the client does not have persistence. If you want to do persistence, you'll need
+*IMPORTANT: The script of the client does not have persistence. If you want to do persistence, you'll need
 to make it by yourself. Another important point is that the client script maybe delay some seconds or few 
-minutes for connect/reconnect.
+minutes for connect/reconnect.*
 
 ### Release status
 
