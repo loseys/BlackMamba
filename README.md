@@ -22,43 +22,26 @@
 
 ### What's BlackMamba?
 
-BlackMamba is a multi-client C2/post-exploitation framework with some spyware features. It is powered by Python 3.8.6 and QT Framework.
+Black Mamba is a Command and Control (C2) that works with multiple connections at same time. It was developed with Python and with Qt Framework and have multiples features for a post-exploitation step.
 
 ### Some Features:
 
-- [x] Supports multiple client connections at the same time.
-- [x] Real-time communication and updates between the client and server.
-- [x] Almost all communications are encrypted, except for screen video streaming.
-- [x] Get a real-time screenshot from the client.
-- [x] Watch in real-time the client screen.
-- [x] Lock and unlock the machine of the client.
-- [x] Download files from the client or uploads files for the client.
-- [x] Register all the keys pressed by the client.
-- [x] Download files from URLs or content by RAW pages.
+- [x] Multiple clients.
+- [x] Real-time communication.
+- [x] Encrypted communication
+- [x] Screenshot gathering.
+- [x] Real-time video capture.
+- [x] Locking of client mouse.
+- [x] Download and upload of files.
+- [x] Keylogger;
+- [x] Web downloader.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=1127 height=618 alt="ST"/> 
-</p> </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61597947/107297933-23c6e800-6a53-11eb-8b24-9d49876797e1.png" width=1366 height=626 alt="ST"/> 
-</p> </p>
+<img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297933-23c6e800-6a53-11eb-8b24-9d49876797e1.png" width=50% />
+<img src="https://user-images.githubusercontent.com/61597947/107297929-21fd2480-6a53-11eb-96d4-a45551f07954.png" />
+<img src="https://user-images.githubusercontent.com/61597947/107297931-232e5180-6a53-11eb-8070-a0081b1f4fd3.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297937-245f7e80-6a53-11eb-8eb5-0c8876cb2b58.png" width=50% />
+<img src="https://user-images.githubusercontent.com/61597947/107297938-245f7e80-6a53-11eb-9653-bea856c87951.png" />
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61597947/107297929-21fd2480-6a53-11eb-96d4-a45551f07954.png" width=1149 height=655 alt="ST"/> 
-</p> </p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61597947/107297931-232e5180-6a53-11eb-8070-a0081b1f4fd3.png" width=978 height=699 alt="ST"/> 
-</p> </p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61597947/107297937-245f7e80-6a53-11eb-8eb5-0c8876cb2b58.png" width=976 height=697 alt="ST"/> 
-</p> </p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/61597947/107297938-245f7e80-6a53-11eb-9653-bea856c87951.png" width=976 height=699 alt="ST"/> 
-</p> </p>
 
 # Install Guide
 
