@@ -24,7 +24,7 @@
 
 Black Mamba is a Command and Control (C2) that works with multiple connections at same time. It was developed with Python and with Qt Framework and have multiples features for a post-exploitation step.
 
-### Some Features:
+### Some Features
 
 - [x] Multiple clients.
 - [x] Real-time communication.
@@ -36,9 +36,10 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
 - [x] Keylogger;
 - [x] Web downloader.
 
+### Gallery
 
-<img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297933-23c6e800-6a53-11eb-8b24-9d49876797e1.png" width=50% />
-<img src="https://user-images.githubusercontent.com/61597947/107297929-21fd2480-6a53-11eb-96d4-a45551f07954.png" />
+<img src="https://user-images.githubusercontent.com/61597947/107297935-23c6e800-6a53-11eb-9fa4-dcfbb516e5a7.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297929-21fd2480-6a53-11eb-96d4-a45551f07954.png" width=50% />
+<img src="images.githubusercontent.com/61597947/107297933-23c6e800-6a53-11eb-8b24-9d49876797e1.png" />
 <img src="https://user-images.githubusercontent.com/61597947/107297931-232e5180-6a53-11eb-8070-a0081b1f4fd3.png" width=50% /><img src="https://user-images.githubusercontent.com/61597947/107297937-245f7e80-6a53-11eb-8eb5-0c8876cb2b58.png" width=50% />
 <img src="https://user-images.githubusercontent.com/61597947/107297938-245f7e80-6a53-11eb-9653-bea856c87951.png" />
 
