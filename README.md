@@ -33,7 +33,7 @@ Black Mamba is a Command and Control (C2) that works with multiple connections a
 - [x] Real-time video capture.
 - [x] Locking of client mouse.
 - [x] Download and upload of files.
-- [x] Keylogger;
+- [x] Keylogger.
 - [x] Web downloader.
 
 ### Call for Contributions⚠️
