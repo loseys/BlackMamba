@@ -1365,7 +1365,8 @@ class Ui_MainWindow2(object):
                     f'{gcts}\nRequesting for update list, please wait.\n')
             self.lineEdit_2.clear()
 
-        elif self.lineEdit_2.text() == '-portscan':
+        elif '-portscan' in self.lineEdit_2.text():
+            self.port_scan = self.lineEdit_2.text()
             self.call_sc(port=True)
             gcts = self.host_terminal.text()
             if gcts == self.host_terminal.text():
@@ -1589,7 +1590,7 @@ class Ui_MainWindow2(object):
                     new_task.write('-update')
 
                 elif port:
-                    new_task.write('-portscan')
+                    new_task.write(self.port_scan)
 
                 elif ant:
                     new_task.write('-antivirus')

