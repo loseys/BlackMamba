@@ -2452,7 +2452,7 @@ class Ui_MainWindow(object):
 #"", None))
         #self.lineEdit_3.setPlaceholderText("")
         self.label_credits.setText(QCoreApplication.translate("MainWindow", u"BlackMamba by Loseys", None))
-        self.label_version.setText(QCoreApplication.translate("MainWindow", u"v1.0.32", None))
+        self.label_version.setText(QCoreApplication.translate("MainWindow", u"v1.0.41", None))
     # retranslateUi
 
 
