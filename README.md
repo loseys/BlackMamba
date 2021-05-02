@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/platform-windows%20%7C%20linux-orange">
   </a>
   <a href="https://github.com/loseys/Oblivion/">
-    <img src="https://img.shields.io/badge/version-v1.0.32-orange">
+    <img src="https://img.shields.io/badge/version-v1.0.41-orange">
   </a>
   <a href="https://github.com/loseys/Oblivion/">
       <img src="https://img.shields.io/badge/python-3.8.6-orange.svg">
