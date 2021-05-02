@@ -1472,7 +1472,7 @@ class Ui_MainWindow2(object):
         if port or upd or ant or btn_scr or sclk or sculk or st_strm or soft_list or wget or wraw or kl_stop or kl_start or kl_print:
             current_call = 'ignore'
 
-        if not port or not upd and not ant and not kl_start and not kl_stop and not kl_print and not soft_list and not wget and not wraw and not btn_scr and not sclk and not sculk\
+        if not port and not upd and not ant and not kl_start and not kl_stop and not kl_print and not soft_list and not wget and not wraw and not btn_scr and not sclk and not sculk\
                 and not st_strm:
             if gotps == '' or gotps == ' ':
                 self.system_terminal.setText(f'>>> {current_call}\n')
