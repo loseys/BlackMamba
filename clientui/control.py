@@ -9,7 +9,6 @@
 
 """
 Control window of host.
-
 >1016 - Window GUI configutarion.
 1016 - Starts painel functions.
 """
@@ -1092,10 +1091,10 @@ class Ui_MainWindow2(object):
         """
         if self.focusWidget().objectName() == 'lineEdit':
             if event.key() == Qt.Key_Down:
-                print('baixo')
+                print('[INFO] baixo')
 
             elif event.key() == Qt.Key_Up:
-                print('cima')
+                print('[INFO] cima')
 
         else:
             super().keyPressEvent(event)
@@ -1142,7 +1141,7 @@ class Ui_MainWindow2(object):
         """
         x = event.pos().x()
         y = event.pos().y()
-        print(x, y)
+        print(f'[INFO] {x} {y}')
 
     def th_uls(self):
         """
@@ -1206,8 +1205,8 @@ class Ui_MainWindow2(object):
                     pass
 
         except Exception as exception:
-            print("Exception: {}".format(type(exception).__name__))
-            print("Exception message: {}".format(exception))
+            print("[ERROR] Exception: {}".format(type(exception).__name__))
+            print("[ERROR] Exception message: {}".format(exception))
 
         self.toolButton_3.setEnabled(True)
 
@@ -1457,10 +1456,8 @@ class Ui_MainWindow2(object):
         The call_sc is responsible to write the command to the STDIN file of host "/bin/request/transfer/stdout/<tag>"
         and invoke the 'execute' "/bin/request/transfer/execute/<tag>" (if execute file is True the server will send the
         command, if the execute is False the server don't send any command).
-
         So, the function will verify the STDOUT file of host "/bin/request/transfer/stdin/<tag>" for check if the response
         of client was received.
-
         If the response of client was received it will write in the terminal output.
         """
 
@@ -1665,7 +1662,7 @@ class Ui_MainWindow2(object):
             command_output = get_output.read()
             get_output.close()
 
-        print(f'stdout -> {command_output}')
+        print(f'[INFO] stdout: {command_output}')
 
         if command_output == '' or command_output == ' ' or command_output == 'None' or command_output == 'NoneNone' \
                 or command_output == b'' or command_output == 'b""' or command_output == "b''":
@@ -1727,7 +1724,7 @@ class Ui_MainWindow2(object):
         with open(f'bin/hosts/{self.hselected}.txt', 'r') as get_info:
             info_host = get_info.read().split('\n')
 
-            print(info_host)
+            print(f'[INFO] {info_host}')
             get_info.close()
 
         for search_info in info_host:
