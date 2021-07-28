@@ -1559,8 +1559,13 @@ class Ui_MainWindow(object):
             f'global tag_{system[2]}_response; tag_{system[2]}_response = "RESPOSTA"; self.variables.append("tag_{system[2]}_response")')
         exec(
             f'global tag_{system[2]}_send; tag_{system[2]}_send = "hello"; self.variables.append("tag_{system[2]}_send")')
-
-        print(f'\n[INFO] clients: {self.clients}')
+        
+        if len(self.clients[0]) > 0:
+            print('\n       Clients Infos')
+            for client in self.clients:
+                infos = {'Uname': client[1], 'Id': client[0], 'Tag': client[2], 'Ip': client[3], 'Mode': client[4]+'\n'}
+                for k,v in infos.items():
+                    print(f'{k}: {v}')
 
         time_refresh = 0
 
@@ -1994,7 +1999,6 @@ class Ui_MainWindow(object):
                         data_string = data_string.replace('"', '')
                         data_string = data_string.replace("'", '')
 
-                        print(f'[INFO] data string: {data_string}')
                         data_string = data_string.replace('%%GBITR%%', 'b')
 
                         print(f'[INFO] data string: {data_string}')
@@ -2192,8 +2196,6 @@ class Ui_MainWindow(object):
 
             str_content = str(str_content).replace("b'", "").replace("'", "")
             system_info = str_content
-
-            print(f'[INFO] System info: {system_info}')
 
             charact1 = system_info[-1:]
             charact2 = system_info[:1]
@@ -2668,4 +2670,3 @@ class host_painel(QMainWindow):
 def void(selected):
     init_m = Ui_MainWindow()
     init_m.painel_init(selected)
-
