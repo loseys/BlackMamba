@@ -9,6 +9,7 @@
 
 """
 Control window of host.
+
 >1016 - Window GUI configutarion.
 1016 - Starts painel functions.
 """
@@ -1456,8 +1457,10 @@ class Ui_MainWindow2(object):
         The call_sc is responsible to write the command to the STDIN file of host "/bin/request/transfer/stdout/<tag>"
         and invoke the 'execute' "/bin/request/transfer/execute/<tag>" (if execute file is True the server will send the
         command, if the execute is False the server don't send any command).
+
         So, the function will verify the STDOUT file of host "/bin/request/transfer/stdin/<tag>" for check if the response
         of client was received.
+
         If the response of client was received it will write in the terminal output.
         """
 
@@ -1722,9 +1725,10 @@ class Ui_MainWindow2(object):
 
     def retranslateUi(self, MainWindow):
         with open(f'bin/hosts/{self.hselected}.txt', 'r') as get_info:
-            info_host = get_info.read().split('\n')
-
-            print(f'[INFO] {info_host}')
+            info_host = get_info.read().replace(':', ': ').split('\n')
+            print('\n               SISTEM INFO')
+            for info in info_host[1:]:
+                print(info)
             get_info.close()
 
         for search_info in info_host:
