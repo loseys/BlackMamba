@@ -755,7 +755,7 @@ class Client:
                         for k, v in x.items():
                             cont_lst += f'{k}: {v}\n'
                         cont_lst += f'\n'
-                    print('[INFO] cont_lst')
+                    print(f'[INFO] {cont_lst}')
                     return cont_lst
                 except:
                     f'[@HOST_SHELL%@]An error was occurred'
