@@ -56,16 +56,16 @@ def recvall(conn, length):
 def start_stream(host=str(SERVER_IP), port=int(PORT_VIDEO)):
     sock = socket.socket()
     sock.bind((host, port))
-    print("Listening ....")
+    print("[INFO] Listening ....")
     sock.settimeout(15.0)
     sock.listen(5)
 
     try:
         conn, addr = sock.accept()
     except:
-        print('socket.timeout: timed out')
+        print('[ERROR] socket.timeout: timed out')
         return
-    print("Accepted ....", addr)
+    print("[INFO] Accepted ....", addr)
 
     client_resolution = (conn.recv(50).decode())
     client_resolution = str(client_resolution).split(',')
